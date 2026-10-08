@@ -21,12 +21,6 @@
 <details><summary>Feedback</summary><ul><li>Buttons depress instantly; a progress bar shows the 1.4 s lock motor.</li><li>A toast confirms success; errors say what happened and what to do. Only real changes notify you.</li><li>The app only says "Locked" after the cupboard reports it.</li></ul></details>
 <details><summary>Conceptual model</summary><ul><li>"The camera records, the lock secures, the app is a remote."</li><li>Offline behaviour is shown in a red banner and in "waiting to sync" tags.</li></ul></details>
 
-<h2>How AI was used</h2>
-<div class="card"><p><b>Tool:</b> Claude (Anthropic), 2 October 2026.</p>
-<p><b>Prompt:</b> I gave Claude my assignment (Smart Kitchen Cupboard: lock, door state, item log with times, search) plus the rubric table of affordance, signifier, constraint, mapping, feedback and conceptual model, and asked for a mobile interface and AI documentation.</p>
-<p><b>What the AI produced:</b> the screen structure, the layout, the working prototype code, the demo controls, the copy, and the rubric mapping above.</p>
-<p><b>What I did:</b> <i>(edit this part)</i> tested every screen against the rubric checklist, tried the offline and door-open cases, changed anything that didn't match my own design ideas, and checked that I can explain every decision.</p>
-<p><b>Limits:</b> the lock, camera and Bluetooth are simulated; AI did not test with real users. Item names are made-up sample data.</p></div>
 <h2>Device</h2>
 <button class="btn danger" onclick={unpair}>Unpair cupboard…</button>
 </main>
